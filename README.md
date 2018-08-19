@@ -1,11 +1,16 @@
 # bytom-api-doc-util
 
 
-base: bytom 1.0.4
+base:
 
-util: jdk 1.8 + gradle +springboot + swagger
+    bytom 1.0.4
+
+tools:
+
+    jdk 1.8 + gradle +springboot + swagger
 
 note：
+
     It is just for test ， do not use it on product. 
     
     It is just for test ， do not use it on product.
