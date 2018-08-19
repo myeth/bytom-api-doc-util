@@ -22,3 +22,8 @@ usage:
       
       3: access http://127.0.0.1:8080 
 
+
+
+memo:
+    if you want to access the remote server  and vi the  application.properties change the bytom.apiserver.url ,bytom.apiserver.toke to yourself.
+    
