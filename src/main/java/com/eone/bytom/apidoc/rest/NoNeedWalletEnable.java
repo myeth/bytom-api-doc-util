@@ -96,7 +96,7 @@ public class NoNeedWalletEnable {
             @ApiResponse(code = 404, message = "no resource")
     })
     @PostMapping("/create-transaction-feed")
-    public String createTransactionFeed(@Valid @RequestBody Object bodyStr) throws IOException {
+    public String createTransactionFeed(@Valid @RequestBody String bodyStr) throws IOException {
         return APIUtil.sendHttpPost(bodyStr.toString(),"create-transaction-feed",bytomApiserverUrl,bytomApiserverToken);
     }
 
@@ -107,7 +107,7 @@ public class NoNeedWalletEnable {
             @ApiResponse(code = 404, message = "no resource")
     })
     @PostMapping("/get-transaction-feed")
-    public String getTransactionFeed(@Valid @RequestBody Object bodyStr) throws IOException {
+    public String getTransactionFeed(@Valid @RequestBody String bodyStr) throws IOException {
         return APIUtil.sendHttpPost(bodyStr.toString(),"get-transaction-feed",bytomApiserverUrl,bytomApiserverToken);
     }
 
@@ -117,7 +117,7 @@ public class NoNeedWalletEnable {
             @ApiResponse(code = 404, message = "no resource")
     })
     @PostMapping("/list-transaction-feeds")
-    public String listTransactionFeeds(@Valid @RequestBody Object bodyStr) throws IOException {
+    public String listTransactionFeeds(@Valid @RequestBody String bodyStr) throws IOException {
         return APIUtil.sendHttpPost(bodyStr.toString(),"list-transaction-feeds",bytomApiserverUrl,bytomApiserverToken);
     }
 
@@ -128,7 +128,7 @@ public class NoNeedWalletEnable {
             @ApiResponse(code = 404, message = "no resource")
     })
     @PostMapping("/delete-transaction-feed.")
-    public String deleteTransactionFeed(@Valid @RequestBody Object bodyStr) throws IOException {
+    public String deleteTransactionFeed(@Valid @RequestBody String bodyStr) throws IOException {
         return APIUtil.sendHttpPost(bodyStr.toString(),"delete-transaction-feed",bytomApiserverUrl,bytomApiserverToken);
     }
 
@@ -138,7 +138,7 @@ public class NoNeedWalletEnable {
             @ApiResponse(code = 404, message = "no resource")
     })
     @PostMapping("/update-transaction-feed")
-    public String updateTransactionFeed(@Valid @RequestBody Object bodyStr) throws IOException {
+    public String updateTransactionFeed(@Valid @RequestBody String bodyStr) throws IOException {
         return APIUtil.sendHttpPost(bodyStr.toString(),"update-transaction-feed",bytomApiserverUrl,bytomApiserverToken);
     }
 
@@ -149,7 +149,7 @@ public class NoNeedWalletEnable {
             @ApiResponse(code = 404, message = "no resource")
     })
     @PostMapping("/get-unconfirmed-transaction")
-    public String getUnconfirmedTransaction(@Valid @RequestBody Object bodyStr) throws IOException {
+    public String getUnconfirmedTransaction(@Valid @RequestBody String bodyStr) throws IOException {
         return APIUtil.sendHttpPost(bodyStr.toString(),"get-unconfirmed-transaction",bytomApiserverUrl,bytomApiserverToken);
     }
 
@@ -159,7 +159,7 @@ public class NoNeedWalletEnable {
             @ApiResponse(code = 404, message = "no resource")
     })
     @PostMapping("/list-unconfirmed-transactions")
-    public String listUnconfirmedTransactions(@Valid @RequestBody Object bodyStr) throws IOException {
+    public String listUnconfirmedTransactions(@Valid @RequestBody String bodyStr) throws IOException {
         return APIUtil.sendHttpPost(bodyStr.toString(),"list-unconfirmed-transactions",bytomApiserverUrl,bytomApiserverToken);
     }
 
@@ -169,7 +169,7 @@ public class NoNeedWalletEnable {
             @ApiResponse(code = 404, message = "no resource")
     })
     @PostMapping("/decode-raw-transaction")
-    public String decodeRawTransaction(@Valid @RequestBody Object bodyStr) throws IOException {
+    public String decodeRawTransaction(@Valid @RequestBody String bodyStr) throws IOException {
         return APIUtil.sendHttpPost(bodyStr.toString(),"decode-raw-transaction",bytomApiserverUrl,bytomApiserverToken);
     }
 
@@ -179,7 +179,7 @@ public class NoNeedWalletEnable {
             @ApiResponse(code = 404, message = "no resource")
     })
     @PostMapping("/get-block-count")
-    public String getBlockCount(@Valid @RequestBody Object bodyStr) throws IOException {
+    public String getBlockCount(@Valid @RequestBody String bodyStr) throws IOException {
         return APIUtil.sendHttpPost(bodyStr.toString(),"get-block-count",bytomApiserverUrl,bytomApiserverToken);
     }
 
@@ -190,7 +190,7 @@ public class NoNeedWalletEnable {
             @ApiResponse(code = 404, message = "no resource")
     })
     @PostMapping("/get-block-hash")
-    public String getBlockHash(@Valid @RequestBody Object bodyStr) throws IOException {
+    public String getBlockHash(@Valid @RequestBody String bodyStr) throws IOException {
         return APIUtil.sendHttpPost(bodyStr.toString(),"get-block-hash",bytomApiserverUrl,bytomApiserverToken);
     }
 
@@ -200,7 +200,7 @@ public class NoNeedWalletEnable {
             @ApiResponse(code = 404, message = "no resource")
     })
     @PostMapping("/get-block")
-    public String getBlock(@Valid @RequestBody Object bodyStr) throws IOException {
+    public String getBlock(@Valid @RequestBody String bodyStr) throws IOException {
         return APIUtil.sendHttpPost(bodyStr.toString(),"get-block",bytomApiserverUrl,bytomApiserverToken);
     }
 
@@ -211,7 +211,7 @@ public class NoNeedWalletEnable {
             @ApiResponse(code = 404, message = "no resource")
     })
     @PostMapping("/get-block-header")
-    public String getBlockHeader(@Valid @RequestBody Object bodyStr) throws IOException {
+    public String getBlockHeader(@Valid @RequestBody String bodyStr) throws IOException {
         return APIUtil.sendHttpPost(bodyStr.toString(),"get-block-header",bytomApiserverUrl,bytomApiserverToken);
     }
 
@@ -222,7 +222,7 @@ public class NoNeedWalletEnable {
             @ApiResponse(code = 404, message = "no resource")
     })
     @PostMapping("/get-difficulty")
-    public String getDifficulty(@Valid @RequestBody Object bodyStr) throws IOException {
+    public String getDifficulty(@Valid @RequestBody String bodyStr) throws IOException {
         return APIUtil.sendHttpPost(bodyStr.toString(),"get-difficulty",bytomApiserverUrl,bytomApiserverToken);
     }
 
@@ -233,7 +233,7 @@ public class NoNeedWalletEnable {
             @ApiResponse(code = 404, message = "no resource")
     })
     @PostMapping("/get-hash-rate")
-    public String getHashRate(@Valid @RequestBody Object bodyStr) throws IOException {
+    public String getHashRate(@Valid @RequestBody String bodyStr) throws IOException {
         return APIUtil.sendHttpPost(bodyStr.toString(),"get-hash-rate",bytomApiserverUrl,bytomApiserverToken);
     }
 
@@ -244,7 +244,7 @@ public class NoNeedWalletEnable {
             @ApiResponse(code = 404, message = "no resource")
     })
     @PostMapping("/net-info")
-    public String netInfo(@Valid @RequestBody Object bodyStr) throws IOException {
+    public String netInfo(@Valid @RequestBody String bodyStr) throws IOException {
         return APIUtil.sendHttpPost(bodyStr.toString(),"net-info",bytomApiserverUrl,bytomApiserverToken);
     }
 
@@ -255,7 +255,7 @@ public class NoNeedWalletEnable {
             @ApiResponse(code = 404, message = "no resource")
     })
     @PostMapping("/is-mining")
-    public String isMining(@Valid @RequestBody Object bodyStr) throws IOException {
+    public String isMining(@Valid @RequestBody String bodyStr) throws IOException {
         return APIUtil.sendHttpPost(bodyStr.toString(),"is-mining",bytomApiserverUrl,bytomApiserverToken);
     }
 
@@ -265,7 +265,7 @@ public class NoNeedWalletEnable {
             @ApiResponse(code = 404, message = "no resource")
     })
     @PostMapping("/set-mining")
-    public String setMining(@Valid @RequestBody Object bodyStr) throws IOException {
+    public String setMining(@Valid @RequestBody String bodyStr) throws IOException {
         return APIUtil.sendHttpPost(bodyStr.toString(),"set-mining",bytomApiserverUrl,bytomApiserverToken);
     }
 
@@ -275,7 +275,7 @@ public class NoNeedWalletEnable {
             @ApiResponse(code = 404, message = "no resource")
     })
     @PostMapping("/gas-rate")
-    public String gasRate(@Valid @RequestBody Object bodyStr) throws IOException {
+    public String gasRate(@Valid @RequestBody String bodyStr) throws IOException {
         return APIUtil.sendHttpPost(bodyStr.toString(),"gas-rate",bytomApiserverUrl,bytomApiserverToken);
     }
 
@@ -286,7 +286,7 @@ public class NoNeedWalletEnable {
             @ApiResponse(code = 404, message = "no resource")
     })
     @PostMapping("/verify-message")
-    public String verifyMessage(@Valid @RequestBody Object bodyStr) throws IOException {
+    public String verifyMessage(@Valid @RequestBody String bodyStr) throws IOException {
         return APIUtil.sendHttpPost(bodyStr.toString(),"verify-message",bytomApiserverUrl,bytomApiserverToken);
     }
 
@@ -297,7 +297,7 @@ public class NoNeedWalletEnable {
             @ApiResponse(code = 404, message = "no resource")
     })
     @PostMapping("/decode-program")
-    public String decodeProgram(@Valid @RequestBody Object bodyStr) throws IOException {
+    public String decodeProgram(@Valid @RequestBody String bodyStr) throws IOException {
         return APIUtil.sendHttpPost(bodyStr.toString(),"decode-program",bytomApiserverUrl,bytomApiserverToken);
     }
 
@@ -308,7 +308,7 @@ public class NoNeedWalletEnable {
             @ApiResponse(code = 404, message = "no resource")
     })
     @PostMapping("/compile")
-    public String compile(@Valid @RequestBody Object bodyStr) throws IOException {
+    public String compile(@Valid @RequestBody String bodyStr) throws IOException {
         return APIUtil.sendHttpPost(bodyStr.toString(),"compile",bytomApiserverUrl,bytomApiserverToken);
     }
 
@@ -319,7 +319,7 @@ public class NoNeedWalletEnable {
             @ApiResponse(code = 404, message = "no resource")
     })
     @PostMapping("/list-peers")
-    public String listPeers(@Valid @RequestBody Object bodyStr) throws IOException {
+    public String listPeers(@Valid @RequestBody String bodyStr) throws IOException {
         return APIUtil.sendHttpPost(bodyStr.toString(),"list-peers",bytomApiserverUrl,bytomApiserverToken);
     }
 
@@ -329,7 +329,7 @@ public class NoNeedWalletEnable {
             @ApiResponse(code = 404, message = "no resource")
     })
     @PostMapping("/disconnect-peer")
-    public String disconnectPeer(@Valid @RequestBody Object bodyStr) throws IOException {
+    public String disconnectPeer(@Valid @RequestBody String bodyStr) throws IOException {
         return APIUtil.sendHttpPost(bodyStr.toString(),"disconnect-peer",bytomApiserverUrl,bytomApiserverToken);
     }
 
@@ -339,7 +339,7 @@ public class NoNeedWalletEnable {
             @ApiResponse(code = 404, message = "no resource")
     })
     @PostMapping("/connect-peer")
-    public String connectPeer(@Valid @RequestBody Object bodyStr) throws IOException {
+    public String connectPeer(@Valid @RequestBody String bodyStr) throws IOException {
         return APIUtil.sendHttpPost(bodyStr.toString(),"connect-peer",bytomApiserverUrl,bytomApiserverToken);
     }
 
@@ -351,7 +351,7 @@ public class NoNeedWalletEnable {
             @ApiResponse(code = 404, message = "no resource")
     })
     @PostMapping("/get-work")
-    public String getWork(@Valid @RequestBody Object bodyStr) throws IOException {
+    public String getWork(@Valid @RequestBody String bodyStr) throws IOException {
         return APIUtil.sendHttpPost(bodyStr.toString(),"get-work",bytomApiserverUrl,bytomApiserverToken);
     }
 
@@ -363,7 +363,7 @@ public class NoNeedWalletEnable {
             @ApiResponse(code = 404, message = "no resource")
     })
     @PostMapping("/submit-work")
-    public String submitWork(@Valid @RequestBody Object bodyStr) throws IOException {
+    public String submitWork(@Valid @RequestBody String bodyStr) throws IOException {
         return APIUtil.sendHttpPost(bodyStr.toString(),"submit-work",bytomApiserverUrl,bytomApiserverToken);
     }
 
@@ -374,7 +374,7 @@ public class NoNeedWalletEnable {
             @ApiResponse(code = 404, message = "no resource")
     })
     @PostMapping("/get-work-json")
-    public String getWorkJson(@Valid @RequestBody Object bodyStr) throws IOException {
+    public String getWorkJson(@Valid @RequestBody String bodyStr) throws IOException {
         return APIUtil.sendHttpPost(bodyStr.toString(),"get-work-json",bytomApiserverUrl,bytomApiserverToken);
     }
 
@@ -385,7 +385,7 @@ public class NoNeedWalletEnable {
             @ApiResponse(code = 404, message = "no resource")
     })
     @PostMapping("/submit-work-json")
-    public String submitWorkJson(@Valid @RequestBody Object bodyStr) throws IOException {
+    public String submitWorkJson(@Valid @RequestBody String bodyStr) throws IOException {
         return APIUtil.sendHttpPost(bodyStr.toString(),"submit-work-json",bytomApiserverUrl,bytomApiserverToken);
     }
 
